@@ -7,20 +7,20 @@
 </head>
 <body>
     <section id="toDoList">
-        <form>
+        <form onsubmit="return false">
             <input required="" type="text" placeholder="Pâtes..." id="myInput">
-            <button class="btn" onclick="getShoppingListItem()">Ajouter</button>
+            <button class="btn" onclick="addNewItem()">Ajouter</button>
         </form>
         <main>
             <ul class="list-group">
                 <li class="todo">
                     <label for="todo-1">
-                        Item 2
+                        Lait
                     </label>
                 </li>
                 <li class="todo">
                     <label for="todo-2">
-                        Item 1
+                        Oeuf
                     </label>
                 </li>
             </ul>
