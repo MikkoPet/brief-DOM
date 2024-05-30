@@ -1,12 +1,17 @@
 let scoreDisplay = document.querySelector('h1');
 let limitDisplay = document.querySelector('#scoreLimit');
+
 let buttonPlayer1 = document.querySelector('#player1');
 let buttonPlayer2 = document.querySelector('#player2');
+
 let leadMessage = document.querySelector('#leadMessage');
 
 let scoreLimit = 1;
 let scorePlayer1 = 0;
 let scorePlayer2 = 0;
+
+let ratio1 = 50;
+let ratio2 = 50;
 
 function changeLimit() {
     scoreLimit = document.querySelector('input').value;
@@ -20,11 +25,13 @@ function changeLimit() {
 
 function scoreUpPlayer1 () {
     scoreDisplay.innerText = `${++scorePlayer1} to ${scorePlayer2}`;
+    
     blockButton();
     updateLead();
 }
 function scoreUpPlayer2 () {
     scoreDisplay.innerText = `${scorePlayer1} to ${++scorePlayer2}`;
+
     blockButton();
     updateLead();
 }
@@ -36,7 +43,13 @@ if (scorePlayer1 === +scoreLimit || scorePlayer2 === +scoreLimit) {
 }
 }
 
+
 function updateLead() {
+
+    ratio1 = scorePlayer1 * 100 /(scorePlayer1+scorePlayer2);
+    ratio2 = 100 - scorePlayer2 * 100 /(scorePlayer1+scorePlayer2);
+    console.log(ratio1);
+
     if (scorePlayer1 === scorePlayer2) {
         leadMessage.innerText = "It's a tie...";
         leadMessage.style.color = "black";
@@ -47,6 +60,7 @@ function updateLead() {
         leadMessage.innerText = `Player 2 ${scorePlayer2 === +scoreLimit ? "won" : "is leading"} !`;
         leadMessage.style.color = "rgb(167, 219, 191)"
     }
+    document.body.style.background = `linear-gradient(to right, rgb(243, 197, 185) ${ratio1}%, rgb(167, 219, 191) ${ratio2}%)`;
 }
 
 
@@ -56,4 +70,5 @@ function resetPoints() {
     scoreDisplay.innerText = `${scorePlayer1} to ${scorePlayer2}`;
     buttonPlayer1.removeAttribute("disabled");
     buttonPlayer2.removeAttribute("disabled");
+    document.body.style.background = `white`;
 }
