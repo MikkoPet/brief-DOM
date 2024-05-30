@@ -63,14 +63,14 @@ button {
     background-color: rgb(243, 197, 185);
 }
 #player1:hover {
-    background-color: rgb(192, 155, 146);
+    background-color: #f783a8;
 }
 
 #player2 {
     background-color: rgb(167, 219, 191);
 }
 #player2:hover {
-    background-color: rgb(115, 151, 132);
+    background-color: rgb(59, 190, 120);
 }
 
 #reset,

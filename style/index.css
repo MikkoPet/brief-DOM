@@ -40,5 +40,6 @@ a {
 
 a:hover {
     background-color: #f783a8;
-
+    color: white;
+    font-weight: bolder;
 }
