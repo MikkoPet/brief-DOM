@@ -13,3 +13,9 @@ function nextImage() {
     content.style.backgroundColor = imageData[++index % imageData.length];
 }
 
+function prevImage() {
+    let index = imageData.indexOf(content.style.backgroundColor);
+    content.style.backgroundColor = imageData[Math.abs(--index) % imageData.length];
+}
+
+
