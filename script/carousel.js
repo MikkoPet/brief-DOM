@@ -3,7 +3,7 @@ const content = document.querySelector('#content');
 const caption = document.querySelector('p');
 
 let imageData = [
-    ["green", "1"], ["aqua", "2"], ["red", "3"], ["blue", "4"],
+    ["green", "1", "image1"], ["aqua", "2", "image2"], ["red", "3", "image3"], ["blue", "4", "image4"],
 ];
 
 content.style.backgroundColor = imageData[0][0];
@@ -14,6 +14,7 @@ function nextImage() {
     index = (index + 1)%imageData.length
     content.style.backgroundColor = imageData[index][0];
     caption.innerText = imageData[index][1];
+    content.classList.replace(imageData[(index + 3)%4][2], imageData[index][2]);
 }
 
 function prevImage() {
@@ -24,6 +25,7 @@ function prevImage() {
 
     content.style.backgroundColor = imageData[index][0];
     caption.innerText = imageData[index][1];
+    content.classList.replace(imageData[(index + 5)%4][2], imageData[index][2]);
 }
 
 function currentFinder() {

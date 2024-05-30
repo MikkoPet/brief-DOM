@@ -49,3 +49,27 @@ p {
     font-size: 2rem;
     margin-top: 2vh;
 }
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    background-position: center;
+    background-size: cover;
+}
+
+.image1 {
+    background-image: url(../res/hazy-night.png);
+}
+
+.image2 {
+    background-image: url(../res/mixed-precipitation.png);
+}
+
+.image3 {
+    background-image: url(../res/moon.png);
+}
+
+.image4 {
+    background-image: url(../res/mostly-sunny.png);
+}
