@@ -1,5 +1,6 @@
 const container = document.querySelector('#container');
 const content = document.querySelector('#content');
+const caption = document.querySelector('p');
 
 let imageData = [
     "green", "aqua", "red", "blue",
@@ -15,7 +16,7 @@ function nextImage() {
     let index = imageData.indexOf(content.style.backgroundColor);
     index = (index + 1)%imageData.length
     content.style.backgroundColor = imageData[index];
-    content.innerText = "Image " + imageTitle[index % imageData.length];
+    caption.innerText = "Image " + imageTitle[index % imageData.length];
 }
 
 function prevImage() {
@@ -25,7 +26,7 @@ function prevImage() {
     index = (index - 1) % imageData.length;
 
     content.style.backgroundColor = imageData[index];
-    content.innerText = "Image " + imageTitle[index];
+    caption.innerText = "Image " + imageTitle[index];
 }
 
 
