@@ -1,7 +1,8 @@
 let scoreDisplay = document.querySelector('h1');
-let limitDisplay = document.querySelector('p');
+let limitDisplay = document.querySelector('#scoreLimit');
 let buttonPlayer1 = document.querySelector('#player1');
 let buttonPlayer2 = document.querySelector('#player2');
+let leadMessage = document.querySelector('#leadMessage');
 
 let scoreLimit = 1;
 let scorePlayer1 = 0;
@@ -20,10 +21,12 @@ function changeLimit() {
 function scoreUpPlayer1 () {
     scoreDisplay.innerText = `${++scorePlayer1} to ${scorePlayer2}`;
     blockButton();
+    updateLead();
 }
 function scoreUpPlayer2 () {
     scoreDisplay.innerText = `${scorePlayer1} to ${++scorePlayer2}`;
     blockButton();
+    updateLead();
 }
 
 function blockButton() {
@@ -31,6 +34,14 @@ if (scorePlayer1 === +scoreLimit || scorePlayer2 === +scoreLimit) {
     buttonPlayer1.setAttribute("disabled", "");
     buttonPlayer2.setAttribute("disabled", "");
 }
+}
+
+function updateLead() {
+    if (scorePlayer1 === scorePlayer2) {
+        leadMessage.innerText = "It's a tie..."
+    } else if (scorePlayer1 > scorePlayer2) {
+        leadMessage.innerText = `Player 1 ${scorePlayer1 === +scoreLimit ? "won" : " is leading"} !`
+    } else { leadMessage.innerText = `Player 2 ${scorePlayer2 === +scoreLimit ? "won" : "is leading"} !`}
 }
 
 

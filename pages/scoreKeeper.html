@@ -8,13 +8,14 @@
 <body>
         <main>
             <h1>0 to 0</h1>
-            <p>
+            <p id="scoreLimit">
                 Playing to: 1
             </p>
             <input type="number" placeholder="1" oninput="changeLimit()" min="1">
             <button id="player1" onclick="scoreUpPlayer1()">Player One</button>
             <button id="player2" onclick="scoreUpPlayer2()">Player Two</button>
             <button id="reset" onclick="resetPoints()">Reset</button>
+            <p id="leadMessage">New Game!</p>
         </main>
 </body>
 </html>
