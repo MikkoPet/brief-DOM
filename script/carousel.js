@@ -3,7 +3,7 @@ const content = document.querySelector('#content');
 const caption = document.querySelector('p');
 
 let imageData = [
-    ["green", "1", "image1"], ["aqua", "2", "image2"], ["red", "3", "image3"], ["blue", "4", "image4"],
+    ["green", "Hazy Moon", "image1"], ["aqua", "Rain", "image2"], ["red", "Midnight", "image3"], ["blue", "Cloudy", "image4"],
 ];
 
 content.style.backgroundColor = imageData[0][0];
