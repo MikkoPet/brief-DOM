@@ -38,10 +38,15 @@ if (scorePlayer1 === +scoreLimit || scorePlayer2 === +scoreLimit) {
 
 function updateLead() {
     if (scorePlayer1 === scorePlayer2) {
-        leadMessage.innerText = "It's a tie..."
+        leadMessage.innerText = "It's a tie...";
+        leadMessage.style.color = "black";
     } else if (scorePlayer1 > scorePlayer2) {
-        leadMessage.innerText = `Player 1 ${scorePlayer1 === +scoreLimit ? "won" : " is leading"} !`
-    } else { leadMessage.innerText = `Player 2 ${scorePlayer2 === +scoreLimit ? "won" : "is leading"} !`}
+        leadMessage.innerText = `Player 1 ${scorePlayer1 === +scoreLimit ? "won" : " is leading"} !`;
+        leadMessage.style.color = "rgb(243, 197, 185)"
+    } else { 
+        leadMessage.innerText = `Player 2 ${scorePlayer2 === +scoreLimit ? "won" : "is leading"} !`;
+        leadMessage.style.color = "rgb(167, 219, 191)"
+    }
 }
 
 

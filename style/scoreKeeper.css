@@ -1,0 +1,74 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    margin-top: 30vh;
+}
+
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 5vh;
+}
+
+
+button {
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+#player1,
+#player2 {
+    width: 14vw;
+}
+
+#player1 {
+    background-color: rgb(243, 197, 185);
+}
+#player1:hover {
+    background-color: rgb(192, 155, 146);
+}
+
+#player2 {
+    background-color: rgb(167, 219, 191);
+}
+#player2:hover {
+    background-color: rgb(115, 151, 132);
+}
+
+#reset,
+input {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+input {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 5vh;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#leadMessage {
+    font-size: 5rem;
+}
+
