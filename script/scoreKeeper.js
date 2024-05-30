@@ -48,7 +48,6 @@ function updateLead() {
 
     ratio1 = scorePlayer1 * 100 /(scorePlayer1+scorePlayer2);
     ratio2 = 100 - scorePlayer2 * 100 /(scorePlayer1+scorePlayer2);
-    console.log(ratio1);
 
     if (scorePlayer1 === scorePlayer2) {
         leadMessage.innerText = "It's a tie...";
@@ -60,7 +59,7 @@ function updateLead() {
         leadMessage.innerText = `Player 2 ${scorePlayer2 === +scoreLimit ? "won" : "is leading"} !`;
         leadMessage.style.color = "rgb(167, 219, 191)"
     }
-    document.body.style.background = `linear-gradient(to right, rgb(243, 197, 185) ${ratio1}%, rgb(167, 219, 191) ${ratio2}%)`;
+    document.body.style.background = `linear-gradient(to right, rgb(243, 197, 185) ${ratio1 - 10}%, rgb(167, 219, 191) ${ratio2 + 10}%)`;
 }
 
 
