@@ -3,10 +3,5 @@ let limitDisplay = document.querySelector('p').innerText;
 
 function changeLimit() {
     let newLimit = document.querySelector('input').value;
-    console.log(newLimit);
-
-
-
-
     document.querySelector('p').innerText = `Playing to: ${newLimit}`;
 }
