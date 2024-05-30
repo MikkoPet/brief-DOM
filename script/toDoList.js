@@ -20,5 +20,7 @@ function addNewItem() {
     let newItem = document.createElement('li');
     newItem.innerText = itemContent;
     shoppingList.append(newItem);
+    
+    document.querySelector('form').reset();
 
 }
