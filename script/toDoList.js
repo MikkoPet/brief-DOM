@@ -23,7 +23,7 @@ function refreshList() {
         let deleteButton = document.createElement('button');
         deleteButton.setAttribute("type", "button");
         deleteButton.addEventListener("click", function(){
-            let itemToDelete = this.closest("li");
+            let itemToDelete = this.closest("li").innerText.slice(0,-1);
             index = itemData.indexOf(itemToDelete);
             itemData.splice(index, 1);
             refreshList();
