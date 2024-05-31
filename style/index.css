@@ -36,6 +36,7 @@ a {
     padding-top: 2vh;
     padding-bottom: 2vh;
     border-radius: 2.5%;
+    transition: all 100ms ease-in;
 }
 
 a:hover {
