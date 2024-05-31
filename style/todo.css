@@ -64,6 +64,17 @@ button:hover {
     background-color: #f783a8;
 }
 
+.deleter {
+    height: 2.8vh;
+    width: 2.8vh;
+    margin-left: 3vw;
+    font-family: monospace;
+    background-color: #e92f2f;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15%;
+}
+
 ul {
     margin-top: 2vh;
 }
