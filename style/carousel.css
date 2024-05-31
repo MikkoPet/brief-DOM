@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+body {
+    background: linear-gradient(to right, rgb(253, 250, 251), rgb(252, 247, 242));
+}
+
 a {
     font-size: 1rem;
     color: rgb(6, 41, 8);

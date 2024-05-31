@@ -57,9 +57,9 @@ function updateLead() {
         leadMessage.style.color = "rgb(243, 197, 185)"
     } else { 
         leadMessage.innerText = `Player 2 ${scorePlayer2 === +scoreLimit ? "won" : "is leading"} !`;
-        leadMessage.style.color = "rgb(167, 219, 191)"
+        leadMessage.style.color = "rgb(245, 190, 108)"
     }
-    document.body.style.background = `linear-gradient(to right, rgb(243, 197, 185) ${ratio1 - 10}%, rgb(167, 219, 191) ${ratio2 + 10}%)`;
+    document.body.style.background = `linear-gradient(to right, rgb(243, 197, 185) ${ratio1 - 10}%, rgb(245, 190, 108) ${ratio2 + 10}%)`;
 }
 
 
