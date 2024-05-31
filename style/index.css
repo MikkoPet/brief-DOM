@@ -16,11 +16,11 @@ main {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    margin-left: 22vw;
+    margin-left: 35vw;
     padding-left: 20vw;
-    margin-right: 22vw;
+    margin-right: 5vw;
     padding-right: 20vw;
-    margin-top: 30vh;
+    margin-top: 20vh;
     padding-top: 10vh;
     padding-bottom: 8vh;
 }
