@@ -12,8 +12,8 @@ function nextImage() {
     let index = currentFinder();
     index = (index + 1)%imageData.length
 
-    caption.innerText = imageData[index][1];
-    content.classList.replace(imageData[(index + 3)%4][0], imageData[index][0]);
+    caption.innerText = imageData[index][0];
+    content.classList.replace(imageData[(index + 3)%4][1], imageData[index][1]);
 }
 
 function prevImage() {
@@ -21,8 +21,8 @@ function prevImage() {
     if (index - 1 < 0) {index += imageData.length};
     index = (index - 1) % imageData.length;
 
-    caption.innerText = imageData[index][1];
-    content.classList.replace(imageData[(index + 5)%4][0], imageData[index][0]);
+    caption.innerText = imageData[index][0];
+    content.classList.replace(imageData[(index + 5)%4][1], imageData[index][1]);
 }
 
 function currentFinder() {
