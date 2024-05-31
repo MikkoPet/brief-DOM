@@ -20,18 +20,8 @@ function refreshList() {
         let newItem = document.createElement('li');
         newItem.innerText = itemData[n];
 
-        let deleteButton = document.createElement('button');
-        deleteButton.setAttribute("type", "button");
-        deleteButton.addEventListener("click", function(){
-            let itemToDelete = this.closest("li").innerText.slice(0,-1);
-            index = itemData.indexOf(itemToDelete);
-            itemData.splice(index, 1);
-            refreshList();
-        })
-        deleteButton.classList.add("deleter");
-        deleteButton.innerText = "x";
+        createDeleteButton(newItem);
  
-        newItem.append(deleteButton);
         shoppingList.append(newItem);
     }
 }
@@ -49,4 +39,18 @@ function addNewItem() {
 
 }
 
+function createDeleteButton(newItem) {
+    let deleteButton = document.createElement('button');
+        deleteButton.setAttribute("type", "button");
+        deleteButton.addEventListener("click", function(){
+            let itemToDelete = this.closest("li").innerText.slice(0,-1);
+            index = itemData.indexOf(itemToDelete);
+            itemData.splice(index, 1);
+            refreshList();
+        })
+        deleteButton.classList.add("deleter");
+        deleteButton.innerText = "x";
 
+        newItem.append(deleteButton);
+
+}
