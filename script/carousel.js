@@ -13,7 +13,7 @@ function nextImage() {
     index = (index + 1)%imageData.length
 
     caption.innerText = imageData[index][1];
-    content.classList.replace(imageData[(index + 3)%4][1], imageData[index][1]);
+    content.classList.replace(imageData[(index + 3)%4][0], imageData[index][0]);
 }
 
 function prevImage() {
@@ -22,7 +22,7 @@ function prevImage() {
     index = (index - 1) % imageData.length;
 
     caption.innerText = imageData[index][1];
-    content.classList.replace(imageData[(index + 5)%4][1], imageData[index][1]);
+    content.classList.replace(imageData[(index + 5)%4][0], imageData[index][0]);
 }
 
 function currentFinder() {
