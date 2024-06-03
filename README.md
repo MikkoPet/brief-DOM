@@ -6,9 +6,9 @@
 ### About The Project
 
 Three modules to learn the base functionalities of Javascript DOM Manipulation :
-    - A carousel, toggling between four images on click input
-    - A shopping list, with the ability to add AND remove items
-    - A score keeper, which counts points between two players and blocks input once the set maximum amount of points is reached on either side.
+- A carousel, toggling between four images on click input
+- A shopping list, with the ability to add AND remove items
+- A score keeper, which counts points between two players and blocks input once the set maximum amount of points is reached on either side.
 
 
 ---
