@@ -10,6 +10,7 @@ Three modules to learn the base functionalities of Javascript DOM Manipulation :
 - A shopping list, with the ability to add AND remove items
 - A score keeper, which counts points between two players and blocks input once the set maximum amount of points is reached on either side.
 
+Check the results [here](https://mikkopet.github.io/pages/JSDOMApps/index.html)
 
 ---
 
