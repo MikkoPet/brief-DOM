@@ -1,3 +1,5 @@
+"use strict";
+
 let shoppingList = document.body.querySelector('ul');
 let itemData = [];
 

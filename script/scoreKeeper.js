@@ -1,3 +1,5 @@
+"use strict";
+
 let scoreDisplay = document.querySelector('h1');
 let limitDisplay = document.querySelector('#scoreLimit');
 

@@ -1,3 +1,5 @@
+"use strict";
+
 const container = document.querySelector('#container');
 const content = document.querySelector('#content');
 const caption = document.querySelector('p');
